@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=Changa");
+
+/* Variables */
+:root {
+    --font-family: "Changa";
+    --normal-font: 400;
+    --bold-font: 700;
+    --bolder-font: 900;
+    --bg-color: #4a4545;
+    --primary-color: white;
+    --secondary-color: #acaca7;
+    --primary-shadow: #0c0c0b;
+    --secondary-shadow: #b8644a;
+    --bottom-margin: 0.5rem;
+    --bottom-margin-2: 1rem;
+    --line-height: 1.7rem;
+    --transition: 0.3s;
+}
+/* Variables end */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CSS Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+}
+
+nav {
+    position: sticky;
+    display: flex;
+    top: 0;
+    z-index: 1;
+    align-items: center;
+    padding: 1.5rem 3.5rem;
+    background-color: var(--bg-color);
+    box-shadow: 0 3px 5px var(--primary-shadow);
+}
+nav h1 {
+    color: var(--primary-color);
+}
+
+nav a {
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+nav a:hover {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+nav ul {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    list-style-type: none;
+    gap: 3rem;
+}
+
+nav ul li {
+    font-weight: var(--bold-font);
+}
+
+.burger-menu {
+    color: var(--primary-color);
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+
+.hero {
+    background-color: var(--bg-color);
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    padding-top:30%;
+    text-align:center;
+    font-size: 64px;
+    text-shadow: 1px 1px 2px var(--primary-shadow);
+}
+
+.border{
+    position: absolute;
+    top: 50%;
+    border-bottom: 1px double;
+}
+
+.centered2 {
+    position: absolute;
+    top: 1em;
+    left: 0;
+    width:100%;
+    padding-top:40%;
+    text-align:center;
+    font-size: 48px;
+    text-shadow: 1px 1px 2px var(--primary-shadow);
+}
+
+.hero-img {
+    position: center;
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.bio {
+    padding: 0.625rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 15px 2px var(--primary-shadow);
+}
+
+.bio h1 {
+    margin-bottom: var(--bottom-margin);
+    color: var(--primary-color);
+}
+
+.bio p {
+    line-height: var(--line-height);
+    padding: 0.3rem 0;
+    color: var(--primary-color);
+}
+
+.more-about {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: left;
+    display: flex;
+}
+.about-title{
+    color: var(--primary-color);
+    text-align: center;
+    margin: auto;
+}
+
+.more-about p {
+    line-height: var(--line-height);
+    color: var(--primary-color);
+    position: relative;
+    margin: auto;
+}
+
+.more-about img {
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.skills {
+    background-color: var(--bg-color);
+    margin: auto;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.skill-header {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.skills-wrapper img {
+    padding: 1.25rem;
+}
+
+.icon {
+    width: 10em;
+    height: 10em;
+}
+
+.icon-card {
+    background-color: var(--secondary-color);
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--primary-shadow);
+    padding: 20px;
+    margin: 10px;
+}
+
+.projects {
+    background-color: var(--bg-color);
+    padding: 32px 0;
+}
+
+.project-pic {
+    width: 65%;
+    height: 60%;
+}
+
+.projects-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects-title {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.project-container {
+    text-align: center;
+    width: 21.875rem;
+    padding: 1rem;
+}
+
+.project-container p {
+    padding: 0.4rem;
+}
+
+.project-title {
+    margin-bottom: var(--bottom-margin);
+}
+
+.project-details {
+    margin-bottom: var(--bottom-margin);
+}
+
+.project-card {
+    background-color: var(--secondary-color);
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--primary-shadow);
+    padding: 20px;
+    margin: 10px;
+}
+
+.contact {
+    background-color: var(--bg-color);
+}
+
+.contact h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: var(--bottom-margin-2);
+}
+
+.contact-form-container {
+    max-width: 40.75rem;
+    margin: 0 auto;
+    padding: 0.938rem;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px var(--primary-shadow);
+}
+
+.contact-form-container label {
+    line-height: 2.7em;
+    font-weight: var(--bold-font);
+    color: var(--primary-color);
+}
+
+.contact-form-container textarea {
+    min-height: 6.25rem;
+    font-size: 14px;
+    color: var(--primary-shadow);
+}
+
+.contact-form-container .input-field {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 2px outset var(--primary-color);
+    color: var(--primary-shadow);
+    font-size: 0.875rem;
+    outline: none;
+    background-color: var(--secondary-color);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: var(--bold-font);
+    transition: var(--transition);
+    background-color: var(--secondary-color);
+}
+
+.submit-btn:hover {
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 1%;
+    bottom: 50%;
+}
+
+.socicon {
+    width: 4rem;
+    height: 4rem;
+}
+
+.scroll-up {
+    position: fixed;
+    right: 0.5%;
+    bottom: 3%;
+    cursor: pointer;
+}
+
+.up-arrow {
+    width: 3rem;
+    height: 3rem;
+}
+
+@media screen and (max-width: 720px) {
+    /*changes reflects on screen with a width of 720px and below*/
+}
